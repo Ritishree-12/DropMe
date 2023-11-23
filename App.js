@@ -8,6 +8,7 @@ import MapScreen from "./src/screens/MapScreen";
 import HomeScreen from "./src/screens/HomeScreen";
 import Registration from "./src/authentication/Registration";
 import Login from "./src/authentication/Login";
+import ChooseVehicle from "./src/screens/ChooseVehicle";
 
 const Stack = createStackNavigator();
 
@@ -30,6 +31,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Registration" component={Registration} />
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="ChooseVehicle" component={ChooseVehicle} />
       </Stack.Navigator>
     </NavigationContainer>
     

@@ -4,9 +4,9 @@ import {
   StyleSheet,
   View,
   TextInput,
-  Button,
   TouchableOpacity,
 } from "react-native";
+import { FontAwesome } from "@expo/vector-icons";
 
 const Login = ({ navigation }) => {
   return (
@@ -31,13 +31,15 @@ const Login = ({ navigation }) => {
           <View style={styles.horizontalLine} />
         </View>
         <View>
-          <TextInput style={styles.google} placeholder="Google" />
+          <TouchableOpacity>
+            <Text style={styles.google}>Google</Text>
+          </TouchableOpacity>
         </View>
 
         <View>
           <Text style={styles.endDesc}>
             Don't have an account?{" "}
-            <Text style={styles.termsHighlight}>Sign Up</Text>
+            <Text style={styles.termsHighlight} onPress={() => navigation.navigate("Registration")}>Sign Up</Text>
           </Text>
         </View>
       </View>
@@ -97,15 +99,16 @@ const styles = StyleSheet.create({
   google: {
     height: 60,
     width: 140,
-    margin: 12,
+    margin: 20,
     borderWidth: 1,
-    padding: 10,
+    padding: 20,
     borderRadius: 40,
-    color: "white",
-    fontWeight: "bold",
+    color: "black",
+    fontWeight: "800",
     textAlign: "center",
     alignSelf: "center",
     borderColor: "grey",
+    
   },
   orContainer: {
     flexDirection: "row",

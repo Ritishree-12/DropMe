@@ -54,7 +54,6 @@ export default Welcome;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding:5,
   },
   button: {
     height: 55,

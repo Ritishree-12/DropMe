@@ -1,4 +1,4 @@
-import { StatusBar } from "expo-status-bar";
+import SplashScreen from 'react-native-splash-screen'
 import { Image, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 
@@ -34,7 +34,7 @@ const Splash = ({ navigation }) => {
           <Text style={styles.buttonText}>Next</Text>
         </TouchableOpacity>
       </View>
-      <StatusBar style="auto" />
+      {/* <StatusBar style="auto" /> */}
     </View>
   );
 };
@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   text1: {
-    fontFamily: "Times New Roman",
     fontWeight: "bold",
     fontSize: 16,
     color: "#f0f0f0",
